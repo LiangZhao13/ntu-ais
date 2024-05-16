@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm_parameter_tuning/R2021b">
+  <slsa.mm.parametertuning.VariableRegistry type="slsa.mm.parametertuning.VariableRegistry" uuid="58ddfe51-1e69-43d2-9b58-941a2ae9faea">
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="3d19da12-33f9-4d3f-90c8-dceb8fd678f0">
+      <blockPath>demoMarinerPathFollowingCourseControl/From Workspace1</blockPath>
+      <parameterName>VariableName</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="c269e98f-71d2-46b2-b995-647972898f39"/>
+      <isTunable>false</isTunable>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="45d68da5-cc33-49a4-84e7-c99b73c92fe5">
+      <blockPath>demoMarinerPathFollowingCourseControl/From Workspace</blockPath>
+      <parameterName>VariableName</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="961c4f45-dfd2-4d5e-bf51-2004a8d7135f"/>
+      <isTunable>false</isTunable>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="458c28d1-215c-4a2b-a2f9-b15fca2070b2">
+      <blockPath>demoMarinerPathFollowingCourseControl/Discerte-time EKF for SOG and COG/Rate Transition</blockPath>
+      <parameterName>OutPortSampleTime</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="aa33c019-826f-48b0-97f7-b8f25fd2194f"/>
+      <isTunable>false</isTunable>
+    </blockParameters>
+    <blockParameters type="slsa.mm.parametertuning.BlockParameter" uuid="fa1bf6c6-cd10-4653-ba9b-84738bc84510">
+      <blockPath>demoMarinerPathFollowingCourseControl/Discerte-time EKF for SOG and COG/Rate Transition1</blockPath>
+      <parameterName>OutPortSampleTime</parameterName>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="aa33c019-826f-48b0-97f7-b8f25fd2194f"/>
+      <isTunable>false</isTunable>
+    </blockParameters>
+    <defaultValueCachePath>C:\Users\ranyan\Desktop\ntu-ais\ship model\slprj\raccel\demoMarinerPathFollowingCourseControl\demoMarinerPathFollowingCourseControl_default_variable_values.mat</defaultValueCachePath>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="c5882fe4-c59e-48d2-a5a9-9f94b0f69ee4">
+      <expression>0.1</expression>
+      <users type="slsa.mm.parametertuning.VariableDefinition" uuid="8caf8626-bc7b-4feb-82d7-4257075031f5"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="c269e98f-71d2-46b2-b995-647972898f39">
+      <expression>y_data</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="3d19da12-33f9-4d3f-90c8-dceb8fd678f0"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="774929c5-ddec-493c-8cb3-2e4599fd5560"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="aa33c019-826f-48b0-97f7-b8f25fd2194f">
+      <expression>h_samp</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="458c28d1-215c-4a2b-a2f9-b15fca2070b2"/>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="fa1bf6c6-cd10-4653-ba9b-84738bc84510"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="ae0c8dbe-e407-46da-bdc0-bc804f478290"/>
+    </expressions>
+    <expressions type="slsa.mm.parametertuning.Expression" uuid="961c4f45-dfd2-4d5e-bf51-2004a8d7135f">
+      <expression>x_data</expression>
+      <users type="slsa.mm.parametertuning.BlockParameter" uuid="45d68da5-cc33-49a4-84e7-c99b73c92fe5"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="8fd09e91-7617-4999-82d2-2f512fc97ff3"/>
+    </expressions>
+    <name>demoMarinerPathFollowingCourseControl</name>
+    <variableDefinitions type="slsa.mm.parametertuning.VariableDefinition" uuid="8caf8626-bc7b-4feb-82d7-4257075031f5">
+      <variable type="slsa.mm.parametertuning.Variable" uuid="ae0c8dbe-e407-46da-bdc0-bc804f478290"/>
+      <expression type="slsa.mm.parametertuning.Expression" uuid="c5882fe4-c59e-48d2-a5a9-9f94b0f69ee4"/>
+    </variableDefinitions>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="ae0c8dbe-e407-46da-bdc0-bc804f478290">
+      <definition type="slsa.mm.parametertuning.VariableDefinition" uuid="8caf8626-bc7b-4feb-82d7-4257075031f5"/>
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="aa33c019-826f-48b0-97f7-b8f25fd2194f"/>
+      <name>h_samp</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="a67f28fd-75ab-4eed-89e9-44ded4012cae"/>
+    </variables>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="774929c5-ddec-493c-8cb3-2e4599fd5560">
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="c269e98f-71d2-46b2-b995-647972898f39"/>
+      <name>y_data</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="e71c7034-9a34-49f9-97fc-b2b7237a966b"/>
+    </variables>
+    <variables type="slsa.mm.parametertuning.Variable" uuid="8fd09e91-7617-4999-82d2-2f512fc97ff3">
+      <expressions type="slsa.mm.parametertuning.Expression" uuid="961c4f45-dfd2-4d5e-bf51-2004a8d7135f"/>
+      <name>x_data</name>
+      <workspace type="slsa.mm.parametertuning.Workspace" uuid="e71c7034-9a34-49f9-97fc-b2b7237a966b"/>
+    </variables>
+    <workspaces type="slsa.mm.parametertuning.Workspace" uuid="a67f28fd-75ab-4eed-89e9-44ded4012cae">
+      <name>demoMarinerPathFollowingCourseControl:186</name>
+      <type>MASK</type>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="ae0c8dbe-e407-46da-bdc0-bc804f478290"/>
+    </workspaces>
+    <workspaces type="slsa.mm.parametertuning.Workspace" uuid="e71c7034-9a34-49f9-97fc-b2b7237a966b">
+      <name>global-workspace</name>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="774929c5-ddec-493c-8cb3-2e4599fd5560"/>
+      <variables type="slsa.mm.parametertuning.Variable" uuid="8fd09e91-7617-4999-82d2-2f512fc97ff3"/>
+    </workspaces>
+  </slsa.mm.parametertuning.VariableRegistry>
+</MF0>

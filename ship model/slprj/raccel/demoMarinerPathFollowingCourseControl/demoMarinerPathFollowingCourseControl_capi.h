@@ -1,0 +1,6 @@
+#ifndef RTW_HEADER_demoMarinerPathFollowingCourseControl_capi_h_
+#define RTW_HEADER_demoMarinerPathFollowingCourseControl_capi_h_
+#include "demoMarinerPathFollowingCourseControl.h"
+extern void demoMarinerPathFollowingCourseControl_InitializeDataMapInfo (
+void ) ;
+#endif
